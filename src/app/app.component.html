@@ -1,7 +1,18 @@
 <div class="main__container">
-  <h1>Bouldering Shop</h1>
+  <h1 class="main__headline">Bouldering Shop</h1>
   <div class="main__action-container">
     <app-search class="main__search"></app-search>
     <app-cart class="main__cart"></app-cart>
+  </div>
+  <div class="main__overview-container">
+    <h2>Produkte</h2>
+    <div class="main__products">
+      <app-product-card class="main__product"
+                        *ngFor="let product of products"
+                        [name]="product.name"
+                        [image]="product.image"
+                        [price]="product.price"
+      ></app-product-card>
+    </div>
   </div>
 </div>
