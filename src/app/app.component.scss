@@ -5,3 +5,15 @@
   height: 100%;
   margin: 0 auto;
 }
+
+.main__action-container {
+  display: flex;
+}
+
+.main__search {
+  flex: 1;
+}
+
+.main__cart {
+  margin-left: 2em;
+}
