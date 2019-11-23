@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "reset";
+@import "color";
+@import "content";
+@import "form";
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: $anti-flash-white;
+}
