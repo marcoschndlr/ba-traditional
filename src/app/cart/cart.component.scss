@@ -1,0 +1,16 @@
+@import "configuration";
+@import "color";
+
+.cart__container {
+  display: flex;
+  align-items: center;
+  background-color: $light-steel-blue;
+  padding: 0 1em;
+  height: 100%;
+  border-radius: $main-border-radius;
+  color: $davys-grey;
+}
+
+.cart__label {
+  margin-left: 1em;
+}

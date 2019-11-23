@@ -1,9 +1,11 @@
+@import "configuration";
+
 input {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 14px;
   padding: 1em;
   border: 1px solid transparent;
-  border-radius: 8px;
+  border-radius: $main-border-radius;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 
   &:focus {
