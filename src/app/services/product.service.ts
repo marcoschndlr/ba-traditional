@@ -12,4 +12,8 @@ export class ProductService {
   public getProducts(): Product[] {
     return products;
   }
+
+  public getProductByName(name: string): Product {
+    return products.find(product => product.name === name);
+  }
 }

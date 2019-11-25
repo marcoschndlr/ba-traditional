@@ -1,0 +1,14 @@
+@import "configuration";
+
+.overview__container {
+  margin-top: $spacer-l;
+}
+
+.overview__products {
+  display: flex;
+  margin-top: $spacer-m;
+}
+
+.overview__product:not(:last-of-type) {
+  margin-right: $spacer-m;
+}

@@ -1,0 +1,9 @@
+<div class="overview__container">
+  <h2>Produkte</h2>
+  <div class="overview__products">
+    <app-product-card class="overview__product"
+                      *ngFor="let product of products"
+                      [product]="product"
+    ></app-product-card>
+  </div>
+</div>

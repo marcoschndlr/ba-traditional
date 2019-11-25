@@ -1,7 +1,10 @@
 @import "configuration";
+@import "color";
+
+$font-family: 'M PLUS Rounded 1c', sans-serif;
 
 input {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: $font-family;
   font-size: 14px;
   padding: 1em;
   border: 1px solid transparent;
@@ -11,4 +14,21 @@ input {
   &:focus {
     outline: none;
   }
+}
+
+@mixin button-base {
+  font-family: $font-family;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border: none;
+  border-radius: $main-border-radius;
+  cursor: pointer;
+}
+
+@mixin button-primary {
+  @include button-base;
+  background-color: $pastel-gray;
+  color: $gray-asparagus;
 }

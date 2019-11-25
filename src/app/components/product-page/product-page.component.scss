@@ -1,0 +1,47 @@
+@import "configuration";
+@import "color";
+@import "form";
+
+.product__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: $spacer-m;
+}
+
+.product__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product__image-container {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: $main-border-radius;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.product__details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: $spacer-l;
+  margin-left: 100px;
+}
+
+.product__price {
+  margin-top: $spacer-m;
+}
+
+.product__add-to-cart-button {
+  @include button-primary;
+  margin-top: $spacer-m;
+}

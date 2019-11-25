@@ -4,15 +4,5 @@
     <app-search class="main__search"></app-search>
     <app-cart class="main__cart"></app-cart>
   </div>
-  <div class="main__overview-container">
-    <h2>Produkte</h2>
-    <div class="main__products">
-      <app-product-card class="main__product"
-                        *ngFor="let product of products"
-                        [name]="product.name"
-                        [image]="product.image"
-                        [price]="product.price"
-      ></app-product-card>
-    </div>
-  </div>
+  <router-outlet></router-outlet>
 </div>
